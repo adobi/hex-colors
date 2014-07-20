@@ -1,5 +1,5 @@
 <?php
-//ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 require_once('api/TwitterApiExchange.php');
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
 $settings = array(
@@ -15,7 +15,13 @@ $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 $getfield = '?screen_name=EveryHexColor';
 $requestMethod = 'GET';
 $twitter = new TwitterAPIExchange($settings);
-var_dump($twitter->setGetfield($getfield)
+
+$responseJSON = $twitter->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
-             ->performRequest()
-        );
+             ->performRequest();
+
+$response = null;
+if ($responseJSON) {
+  $response = json_decode($responseJSON);
+}
+require_once('template/layout.php');
