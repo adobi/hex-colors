@@ -7,17 +7,13 @@ body {
 }
 
 .color {
-	float: left;
-	margin-right: 10px;
 	margin-bottom: 20px;
 }
 
 .color-sample {
-	width: 128px;
 	height: 128px;
-	border-radius: 5px;
-
 }
+
 
 .color-code {
 	font-size: 1.5em;
@@ -25,4 +21,17 @@ body {
 
 .text-center {
 	text-align: center
+}
+
+@media (min-width: 768px) {
+
+	.color {
+		float: left;
+		margin-right: 10px;
+	}
+	.color-sample {
+		width: 128px;
+		border-radius: 5px;
+	}
+
 }
