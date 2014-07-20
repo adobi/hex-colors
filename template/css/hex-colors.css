@@ -4,6 +4,15 @@ body {
 
 .navbar-default {
 	background: white;
+	border-color:white;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+	color:black;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 32px;
 }
 
 .color {
@@ -17,6 +26,7 @@ body {
 
 .color-code {
 	font-size: 1.5em;
+	color: black;
 }
 
 .text-center {
