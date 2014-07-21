@@ -1,3 +1,36 @@
+/* haptik */
+@font-face {
+  font-family: 'haptik';
+  src: url('../fonts/haptik/110510_gt_haptik_vol_2_01-web.eot');
+  src: url('../fonts/haptik/110510_gt_haptik_vol_2_01-web.eot?#iefix') format('embedded-opentype'),
+  		 url('../fonts/haptik/110510_gt_haptik_vol_2_01-web.woff') format('woff'), 
+  		 url('../fonts/haptik/110510_gt_haptik_vol_2_01-web.ttf') format('truetype'), 
+  		 url('../fonts/haptik/110510_gt_haptik_vol_2_01-web.svg#GTHaptikRegular') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'haptik';
+  src: url('../fonts/haptik/110510_haptik_medium_04_spec-web.eot');
+  src: url('../fonts/haptik/110510_haptik_medium_04_spec-web.eot?#iefix') format('embedded-opentype'), 
+  		 url('../fonts/haptik/110510_haptik_medium_04_spec-web.woff') format('woff'),
+  		 url('../fonts/haptik/110510_haptik_medium_04_spec-web.ttf') format('truetype'), 
+  		 url('../fonts/haptik/110510_haptik_medium_04_spec-web.svg#GTHaptikMedium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pressura-mono';
+  src: url('../fonts/pressura/pressura-mono-light-webfont.eot');
+  src: url('../fonts/pressura/pressura-mono-light-webfont.eot?#iefix') format('embedded-opentype'),
+  		 url('../fonts/pressura/pressura-mono-light-webfont.woff') format('woff'), 
+  		 url('../fonts/pressura/pressura-mono-light-webfont.ttf') format('truetype'), 
+  		 url('../fonts/pressura/pressura-mono-light-webfont.svg#gt_pressura_triallight_italic') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   padding-top: 70px;
 }
@@ -13,6 +46,7 @@ body {
 
 .navbar-default .navbar-brand {
 	font-size: 32px;
+  font-family: haptik;
 }
 
 .color {
@@ -27,6 +61,7 @@ body {
 .color-code {
 	font-size: 1.5em;
 	color: black;
+  font-family: 'pressura-mono';
 }
 
 .text-center {
